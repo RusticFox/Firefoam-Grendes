@@ -30,7 +30,7 @@
 			<texPath>Things/Item/Equipment/WeaponRanged/ExtinguisherGrenades</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<soundInteract>InteractGrenade</soundInteract>
+		<soundInteract>Interact_Grenade</soundInteract>
 		<techLevel>Industrial</techLevel>
 		<statBases>
 			<MarketValue>350</MarketValue>
@@ -75,7 +75,7 @@
 			<damageDef>Extinguish</damageDef>
 			<damageAmountBase>9999</damageAmountBase>
 			<explosionDelay>100</explosionDelay>
-			<preExplosionSpawnThingDef>FilthFireFoam</preExplosionSpawnThingDef>
+			<preExplosionSpawnThingDef>Filth_FireFoam</preExplosionSpawnThingDef>
 		</projectile>
 	</ThingDef>
 	
