@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-<name>Firefoam Grenades</name>
+<name>Firefoam Grenades [1.0/1.1]</name>
 <author>✬Rustic Fox✬</author>
 <url>https://ludeon.com/forums/index.php?topic=37787.0\</url>
-<targetVersion>0.19.2009</targetVersion>
+<packageId>RusticFox.FFGrenades</packageId>
+<supportedVersions>
+   <li>1.0</li>
+   <li>1.1</li>
+</supportedVersions>
 <description>
 Allows you to craft firefoam grenades for! 20 steel 1 component. 
 
 Throw them like a regular grenade
-	
-Version: 1.2.0
+
+Compatibility - Should be compatable with everything.
+
+Older versions - https://github.com/RusticFox/Firefoam-Grendes/
+
+v1.3.0
 </description>
 </ModMetaData>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>MakeFirefoamGrenades</defName>
+    <label>Firefoam Grenades</label>
+    <description>Craft firefoam grenades.</description>
+	<recipeUsers>
+	<li>TableMachining</li>
+	</recipeUsers>
+    <jobString>Making firefoam grenades.</jobString>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <researchPrerequisite>Firefoam</researchPrerequisite>
+    <workAmount>800</workAmount>
+    <targetCountAdjustment>5</targetCountAdjustment>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+		<li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Weapon_GrenadeExtinguisher>1</Weapon_GrenadeExtinguisher>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+</Defs>
