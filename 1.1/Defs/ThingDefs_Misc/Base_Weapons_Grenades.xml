@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--Bases-->
+
+  <ThingDef Name="BaseGrenadeProjectile" Abstract="True">
+    <category>Projectile</category>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>Projectile_Explosive</thingClass>
+    <label>projectile</label>
+    <tickerType>Normal</tickerType>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <projectile>
+      <speed>12</speed>
+      <flyOverhead>false</flyOverhead>
+    </projectile>
+  </ThingDef>
+
+  <!--Extinguisher grenade-->
+
+  	<ThingDef ParentName="BaseWeapon">
+		<defName>Weapon_GrenadeExtinguisher</defName>
+		<label>extinguisher grenades</label>
+		<description>Throw them at fires to suppress them.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/ExtinguisherGrenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<statBases>
+			<MarketValue>350</MarketValue>
+			<Mass>1</Mass>
+			<RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+		</statBases>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<label>throw extinguisher grenade</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>12.9</range>
+				<forcedMissRadius>1.0</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Projectile_GrenadeExtinguisher</defaultProjectile>
+			</li>
+		</verbs>
+		<smeltProducts>
+			<Plasteel>25</Plasteel>
+		</smeltProducts>
+	</ThingDef>
+	
+		<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Projectile_GrenadeExtinguisher</defName>
+		<label>extinguisher grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Projectile/ExtinguisherGrenade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>5.5</explosionRadius>
+			<damageDef>Extinguish</damageDef>
+			<damageAmountBase>9999</damageAmountBase>
+			<explosionDelay>100</explosionDelay>
+			<preExplosionSpawnThingDef>Filth_FireFoam</preExplosionSpawnThingDef>
+		</projectile>
+	</ThingDef>
+	
+</Defs>

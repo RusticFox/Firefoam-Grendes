@@ -9,13 +9,14 @@
 	<li>TableMachining</li>
 	</recipeUsers>
     <jobString>Making firefoam grenades.</jobString>
-    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSpeedStat>SmithingSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
     <researchPrerequisite>Firefoam</researchPrerequisite>
     <workAmount>800</workAmount>
     <targetCountAdjustment>5</targetCountAdjustment>
+	<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
     <ingredients>
       <li>
         <filter>
